@@ -1,0 +1,346 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7ec3e6;}
+.s1 { color: #ebebeb;}
+</style>
+</head>
+<body bgcolor="#131314">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># ----------------------------------------------------------------------------------------------------------</span>
+<span class="s0"># # TASK_1</span>
+<span class="s0">#</span>
+<span class="s0"># class ToDoList:</span>
+<span class="s0">#     def __init__(self):</span>
+<span class="s0">#         self.tasks = []</span>
+<span class="s0">#</span>
+<span class="s0">#     def add_task(self, task):</span>
+<span class="s0">#         self.tasks.append(task)</span>
+<span class="s0">#         print(f&quot;Task '{task}' added to the to-do list.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#     def remove_task(self, task):</span>
+<span class="s0">#         if task in self.tasks:</span>
+<span class="s0">#             self.tasks.remove(task)</span>
+<span class="s0">#             print(f&quot;Task '{task}' removed from the to-do list.&quot;)</span>
+<span class="s0">#         else:</span>
+<span class="s0">#             print(f&quot;Task '{task}' not found in the to-do list.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#     def list_tasks(self):</span>
+<span class="s0">#         if self.tasks:</span>
+<span class="s0">#             print(&quot;To-Do List:&quot;)</span>
+<span class="s0">#             for index, task in enumerate(self.tasks, start=1):</span>
+<span class="s0">#                 print(f&quot;{index}. {task}&quot;)</span>
+<span class="s0">#         else:</span>
+<span class="s0">#             print(&quot;To-Do List is empty.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># def main():</span>
+<span class="s0">#     to_do_list = ToDoList()</span>
+<span class="s0">#</span>
+<span class="s0">#     while True:</span>
+<span class="s0">#         print(&quot;\nOptions:&quot;)</span>
+<span class="s0">#         print(&quot;1. Add Task&quot;)</span>
+<span class="s0">#         print(&quot;2. Remove Task&quot;)</span>
+<span class="s0">#         print(&quot;3. List Tasks&quot;)</span>
+<span class="s0">#         print(&quot;4. Exit&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#         choice = input(&quot;Enter your choice: &quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#         if choice == &quot;1&quot;:</span>
+<span class="s0">#             task = input(&quot;Enter the task: &quot;)</span>
+<span class="s0">#             to_do_list.add_task(task)</span>
+<span class="s0">#         elif choice == &quot;2&quot;:</span>
+<span class="s0">#             task = input(&quot;Enter the task to remove: &quot;)</span>
+<span class="s0">#             to_do_list.remove_task(task)</span>
+<span class="s0">#         elif choice == &quot;3&quot;:</span>
+<span class="s0">#             to_do_list.list_tasks()</span>
+<span class="s0">#         elif choice == &quot;4&quot;:</span>
+<span class="s0">#             print(&quot;Exiting the To-Do List application.&quot;)</span>
+<span class="s0">#             break</span>
+<span class="s0">#         else:</span>
+<span class="s0">#             print(&quot;Invalid choice. Please select a valid option.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># if __name__ == &quot;__main__&quot;:</span>
+<span class="s0">#     main()</span>
+
+
+<span class="s0"># -----------------------------------------------------------------------------------------------------------------</span>
+
+<span class="s0">#  TASK_2</span>
+<span class="s0">#</span>
+<span class="s0"># def add(x, y):</span>
+<span class="s0">#     return x + y</span>
+<span class="s0">#</span>
+<span class="s0"># def subtract(x, y):</span>
+<span class="s0">#     return x - y</span>
+<span class="s0">#</span>
+<span class="s0"># def multiply(x, y):</span>
+<span class="s0">#     return x * y</span>
+<span class="s0">#</span>
+<span class="s0"># def divide(x, y):</span>
+<span class="s0">#     if y == 0:</span>
+<span class="s0">#         return &quot;Error: Division by zero&quot;</span>
+<span class="s0">#     return x / y</span>
+<span class="s0">#</span>
+<span class="s0"># while True:</span>
+<span class="s0">#     print(&quot;Options:&quot;)</span>
+<span class="s0">#     print(&quot;Enter 'add' for addition&quot;)</span>
+<span class="s0">#     print(&quot;Enter 'subtract' for subtraction&quot;)</span>
+<span class="s0">#     print(&quot;Enter 'multiply' for multiplication&quot;)</span>
+<span class="s0">#     print(&quot;Enter 'divide' for division&quot;)</span>
+<span class="s0">#     print(&quot;Enter 'exit' to end the program&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#     choice = input(&quot;Enter operation: &quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#     if choice == &quot;exit&quot;:</span>
+<span class="s0">#         print(&quot;Exiting the calculator program.&quot;)</span>
+<span class="s0">#         break</span>
+<span class="s0">#</span>
+<span class="s0">#     if choice not in [&quot;add&quot;, &quot;subtract&quot;, &quot;multiply&quot;, &quot;divide&quot;]:</span>
+<span class="s0">#         print(&quot;Invalid choice. Please enter a valid operation.&quot;)</span>
+<span class="s0">#         continue</span>
+<span class="s0">#</span>
+<span class="s0">#     try:</span>
+<span class="s0">#         num1 = float(input(&quot;Enter first number: &quot;))</span>
+<span class="s0">#         num2 = float(input(&quot;Enter second number: &quot;))</span>
+<span class="s0">#</span>
+<span class="s0">#         if choice == &quot;add&quot;:</span>
+<span class="s0">#             result = add(num1, num2)</span>
+<span class="s0">#         elif choice == &quot;subtract&quot;:</span>
+<span class="s0">#             result = subtract(num1, num2)</span>
+<span class="s0">#         elif choice == &quot;multiply&quot;:</span>
+<span class="s0">#             result = multiply(num1, num2)</span>
+<span class="s0">#         elif choice == &quot;divide&quot;:</span>
+<span class="s0">#             result = divide(num1, num2)</span>
+<span class="s0">#</span>
+<span class="s0">#         print(f&quot;Result: {result}&quot;)</span>
+<span class="s0">#     except ValueError:</span>
+<span class="s0">#         print(&quot;Invalid input. Please enter valid numbers.&quot;)</span>
+<span class="s0">#     except Exception as e:</span>
+<span class="s0">#         print(f&quot;An error occurred: {e}&quot;)</span>
+
+
+<span class="s0"># -----------------------------------------------------------------------------------------------------------------</span>
+
+<span class="s0"># TASK_3</span>
+<span class="s0">#</span>
+<span class="s0"># import random</span>
+<span class="s0"># import string</span>
+<span class="s0">#</span>
+<span class="s0"># def generate_password(length):</span>
+<span class="s0">#     # Define the character set for generating passwords</span>
+<span class="s0">#     characters = string.ascii_letters + string.digits + string.punctuation</span>
+<span class="s0">#</span>
+<span class="s0">#     # Generate a random password with the specified length</span>
+<span class="s0">#     password = ''.join(random.choice(characters) for _ in range(length))</span>
+<span class="s0">#</span>
+<span class="s0">#     return password</span>
+<span class="s0">#</span>
+<span class="s0"># def main():</span>
+<span class="s0">#     print(&quot;Password Generator&quot;)</span>
+<span class="s0">#     try:</span>
+<span class="s0">#         length = int(input(&quot;Enter the desired password length: &quot;))</span>
+<span class="s0">#         if length &lt;= 0:</span>
+<span class="s0">#             print(&quot;Password length must be greater than 0.&quot;)</span>
+<span class="s0">#         else:</span>
+<span class="s0">#             password = generate_password(length)</span>
+<span class="s0">#             print(f&quot;Generated Password: {password}&quot;)</span>
+<span class="s0">#     except ValueError:</span>
+<span class="s0">#         print(&quot;Invalid input. Please enter a valid number for the password length.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># if __name__ == &quot;__main__&quot;:</span>
+<span class="s0">#     main()</span>
+
+
+
+<span class="s0"># -----------------------------------------------------------------------------------------------------------------</span>
+
+<span class="s0"># # Task_4</span>
+<span class="s0">#</span>
+<span class="s0">#</span>
+<span class="s0"># import random</span>
+<span class="s0">#</span>
+<span class="s0"># def determine_winner(user_choice, computer_choice):</span>
+<span class="s0">#     if user_choice == computer_choice:</span>
+<span class="s0">#         return &quot;It's a tie!&quot;</span>
+<span class="s0">#     elif (</span>
+<span class="s0">#         (user_choice == &quot;rock&quot; and computer_choice == &quot;scissors&quot;) or</span>
+<span class="s0">#         (user_choice == &quot;scissors&quot; and computer_choice == &quot;paper&quot;) or</span>
+<span class="s0">#         (user_choice == &quot;paper&quot; and computer_choice == &quot;rock&quot;)</span>
+<span class="s0">#     ):</span>
+<span class="s0">#         return &quot;You win!&quot;</span>
+<span class="s0">#     else:</span>
+<span class="s0">#         return &quot;Computer wins!&quot;</span>
+<span class="s0">#</span>
+<span class="s0"># def main():</span>
+<span class="s0">#     user_score = 0</span>
+<span class="s0">#     computer_score = 0</span>
+<span class="s0">#</span>
+<span class="s0">#     print(&quot;Welcome to Rock-Paper-Scissors Game!&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#     while True:</span>
+<span class="s0">#         user_choice = input(&quot;Choose rock, paper, or scissors (or 'quit' to exit): &quot;).lower()</span>
+<span class="s0">#</span>
+<span class="s0">#         if user_choice == &quot;quit&quot;:</span>
+<span class="s0">#             break</span>
+<span class="s0">#</span>
+<span class="s0">#         if user_choice not in [&quot;rock&quot;, &quot;paper&quot;, &quot;scissors&quot;]:</span>
+<span class="s0">#             print(&quot;Invalid choice. Please choose rock, paper, or scissors.&quot;)</span>
+<span class="s0">#             continue</span>
+<span class="s0">#</span>
+<span class="s0">#         computer_choice = random.choice([&quot;rock&quot;, &quot;paper&quot;, &quot;scissors&quot;])</span>
+<span class="s0">#         print(f&quot;You chose: {user_choice}&quot;)</span>
+<span class="s0">#         print(f&quot;Computer chose: {computer_choice}&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#         result = determine_winner(user_choice, computer_choice)</span>
+<span class="s0">#         print(result)</span>
+<span class="s0">#</span>
+<span class="s0">#         if result == &quot;You win!&quot;:</span>
+<span class="s0">#             user_score += 1</span>
+<span class="s0">#         elif result == &quot;Computer wins!&quot;:</span>
+<span class="s0">#             computer_score += 1</span>
+<span class="s0">#</span>
+<span class="s0">#         print(f&quot;Your score: {user_score}&quot;)</span>
+<span class="s0">#         print(f&quot;Computer's score: {computer_score}&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># if __name__ == &quot;__main__&quot;:</span>
+<span class="s0">#     main()</span>
+
+
+<span class="s0"># -----------------------------------------------------------------------------------------------------------------</span>
+
+
+<span class="s0"># # TASK_5</span>
+<span class="s0">#</span>
+<span class="s0"># contacts = []</span>
+<span class="s0">#</span>
+<span class="s0"># def add_contact():</span>
+<span class="s0">#     name = input(&quot;Enter the name: &quot;)</span>
+<span class="s0">#     phone = input(&quot;Enter the phone number: &quot;)</span>
+<span class="s0">#     email = input(&quot;Enter the email: &quot;)</span>
+<span class="s0">#     address = input(&quot;Enter the address: &quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#     contact = {</span>
+<span class="s0">#         &quot;Name&quot;: name,</span>
+<span class="s0">#         &quot;Phone&quot;: phone,</span>
+<span class="s0">#         &quot;Email&quot;: email,</span>
+<span class="s0">#         &quot;Address&quot;: address,</span>
+<span class="s0">#     }</span>
+<span class="s0">#     contacts.append(contact)</span>
+<span class="s0">#     print(&quot;Contact added successfully!&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># def view_contacts():</span>
+<span class="s0">#     if not contacts:</span>
+<span class="s0">#         print(&quot;Contact list is empty.&quot;)</span>
+<span class="s0">#     else:</span>
+<span class="s0">#         print(&quot;Contact List:&quot;)</span>
+<span class="s0">#         for i, contact in enumerate(contacts, start=1):</span>
+<span class="s0">#             print(f&quot;{i}. Name: {contact['Name']}, Phone: {contact['Phone']}&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># def search_contact():</span>
+<span class="s0">#     search_term = input(&quot;Enter the name or phone number to search: &quot;)</span>
+<span class="s0">#     found_contacts = []</span>
+<span class="s0">#</span>
+<span class="s0">#     for contact in contacts:</span>
+<span class="s0">#         if (</span>
+<span class="s0">#                 search_term.lower() in contact['Name'].lower() or</span>
+<span class="s0">#                 search_term in contact['Phone']</span>
+<span class="s0">#         ):</span>
+<span class="s0">#             found_contacts.append(contact)</span>
+<span class="s0">#</span>
+<span class="s0">#     if found_contacts:</span>
+<span class="s0">#         print(&quot;Search results:&quot;)</span>
+<span class="s0">#         for i, contact in enumerate(found_contacts, start=1):</span>
+<span class="s0">#             print(f&quot;{i}. Name: {contact['Name']}, Phone: {contact['Phone']}&quot;)</span>
+<span class="s0">#     else:</span>
+<span class="s0">#         print(&quot;No matching contacts found.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># def update_contact():</span>
+<span class="s0">#     search_term = input(&quot;Enter the name or phone number of the contact to update: &quot;)</span>
+<span class="s0">#     found_contact = None</span>
+<span class="s0">#</span>
+<span class="s0">#     for contact in contacts:</span>
+<span class="s0">#         if (</span>
+<span class="s0">#                 search_term.lower() in contact['Name'].lower() or</span>
+<span class="s0">#                 search_term in contact['Phone']</span>
+<span class="s0">#         ):</span>
+<span class="s0">#             found_contact = contact</span>
+<span class="s0">#             break</span>
+<span class="s0">#</span>
+<span class="s0">#     if found_contact:</span>
+<span class="s0">#         print(&quot;Current contact information:&quot;)</span>
+<span class="s0">#         print(f&quot;Name: {found_contact['Name']}&quot;)</span>
+<span class="s0">#         print(f&quot;Phone: {found_contact['Phone']}&quot;)</span>
+<span class="s0">#         print(f&quot;Email: {found_contact['Email']}&quot;)</span>
+<span class="s0">#         print(f&quot;Address: {found_contact['Address']}&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#         found_contact['Name'] = input(&quot;Enter new name (press Enter to keep current): &quot;) or found_contact['Name']</span>
+<span class="s0">#         found_contact['Phone'] = input(&quot;Enter new phone number (press Enter to keep current): &quot;) or found_contact[</span>
+<span class="s0">#             'Phone']</span>
+<span class="s0">#         found_contact['Email'] = input(&quot;Enter new email (press Enter to keep current): &quot;) or found_contact['Email']</span>
+<span class="s0">#         found_contact['Address'] = input(&quot;Enter new address (press Enter to keep current): &quot;) or found_contact[</span>
+<span class="s0">#             'Address']</span>
+<span class="s0">#</span>
+<span class="s0">#         print(&quot;Contact updated successfully!&quot;)</span>
+<span class="s0">#     else:</span>
+<span class="s0">#         print(&quot;Contact not found.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># def delete_contact():</span>
+<span class="s0">#     search_term = input(&quot;Enter the name or phone number of the contact to delete: &quot;)</span>
+<span class="s0">#     found_contact = None</span>
+<span class="s0">#</span>
+<span class="s0">#     for contact in contacts:</span>
+<span class="s0">#         if (</span>
+<span class="s0">#                 search_term.lower() in contact['Name'].lower() or</span>
+<span class="s0">#                 search_term in contact['Phone']</span>
+<span class="s0">#         ):</span>
+<span class="s0">#             found_contact = contact</span>
+<span class="s0">#             break</span>
+<span class="s0">#</span>
+<span class="s0">#     if found_contact:</span>
+<span class="s0">#         contacts.remove(found_contact)</span>
+<span class="s0">#         print(&quot;Contact deleted successfully!&quot;)</span>
+<span class="s0">#     else:</span>
+<span class="s0">#         print(&quot;Contact not found.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># def main():</span>
+<span class="s0">#     while True:</span>
+<span class="s0">#         print(&quot;\nContact Book Options:&quot;)</span>
+<span class="s0">#         print(&quot;1. Add Contact&quot;)</span>
+<span class="s0">#         print(&quot;2. View Contacts&quot;)</span>
+<span class="s0">#         print(&quot;3. Search Contact&quot;)</span>
+<span class="s0">#         print(&quot;4. Update Contact&quot;)</span>
+<span class="s0">#         print(&quot;5. Delete Contact&quot;)</span>
+<span class="s0">#         print(&quot;6. Quit&quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#         choice = input(&quot;Enter your choice: &quot;)</span>
+<span class="s0">#</span>
+<span class="s0">#         if choice == &quot;1&quot;:</span>
+<span class="s0">#             add_contact()</span>
+<span class="s0">#         elif choice == &quot;2&quot;:</span>
+<span class="s0">#             view_contacts()</span>
+<span class="s0">#         elif choice == &quot;3&quot;:</span>
+<span class="s0">#             search_contact()</span>
+<span class="s0">#         elif choice == &quot;4&quot;:</span>
+<span class="s0">#             update_contact()</span>
+<span class="s0">#         elif choice == &quot;5&quot;:</span>
+<span class="s0">#             delete_contact()</span>
+<span class="s0">#         elif choice == &quot;6&quot;:</span>
+<span class="s0">#             print(&quot;Exiting the Contact Book.&quot;)</span>
+<span class="s0">#             break</span>
+<span class="s0">#         else:</span>
+<span class="s0">#             print(&quot;Invalid choice. Please select a valid option.&quot;)</span>
+<span class="s0">#</span>
+<span class="s0"># if __name__ == &quot;__main__&quot;:</span>
+<span class="s0">#     main()</span>
+
+
+
+</pre>
+</body>
+</html>
